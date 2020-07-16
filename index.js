@@ -21,18 +21,7 @@ $('#js-shopping-list-form').submit(function(event) {
 
 
 
-// // check and uncheck items on the list by clicking check button
-//      $('.shopping-item-toggle').on('click', function(event) {
-//         $(this).closest('li').toggleClass('shopping-item-checked')
-//     });
-
-
-
 // check and uncheck items on the list by clicking check button
-//  $('.shopping-item-toggle').on('click', function(event) {
-//     $(this).closest('li').toggleClass('shopping-item__checked')
-// });
-
 $('.shopping-list').on('click', '.shopping-item-toggle', function(event) {
   $(this).closest('.shopping-item-controls').siblings('.shopping-item').toggleClass('shopping-item__checked');
 });
